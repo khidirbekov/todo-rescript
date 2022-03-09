@@ -1,0 +1,45 @@
+Arguments: 
+  /Users/khidirbekov/.nvm/versions/node/v14.18.2/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/khidirbekov/.nvm/versions/node/v14.18.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/khidirbekov/dev/rescript-project-template/node_modules/.bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.18.2
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://binary.alfabank.ru/artifactory/api/npm/npm/rescript: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141322:19)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "rescript-project-template",
+    "version": "0.0.1",
+    "scripts": {
+      "build": "rescript",
+      "clean": "rescript clean -with-deps",
+      "start": "rescript build -w"
+    },
+    "keywords": [
+      "rescript"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "rescript": "*"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
