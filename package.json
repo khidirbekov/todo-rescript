@@ -1,17 +1,29 @@
 {
-  "name": "rescript-project-template",
-  "version": "0.0.1",
+  "name": "rescript-template",
+  "version": "1.0.0",
+  "description": "Base idea on how to run ReScript on a Codesandbox.",
+  "keywords": [],
+  "main": "src/index.js",
   "scripts": {
-    "build": "rescript",
-    "clean": "rescript clean -with-deps",
-    "start": "rescript build -w"
+    "re:start": "rescript build -w",
+    "re:clean": "rescript clean",
+    "start": "react-scripts start"
   },
-  "keywords": [
-    "rescript"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "rescript": "*"
-  }
+    "@rescript/react": "0.10.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
+    "rescript": "9.1.4"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8"
+  },
+  "type": "module",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
